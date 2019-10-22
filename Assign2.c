@@ -19,7 +19,7 @@ void ParentF(int PipeOutFD, int PipeInFD) { // Takes as a parameter the output
   char Value[BufferS] = "1"; // create the valeu array and initialize to 1
   long M = 1;                // create the cariable m and initilize
   write(PipeOutFD, Value,
-        strlen(Buffer)); // write the value tp tje write end of the pipe
+        strlen(Value)); // write the value tp tje write end of the pipe
 
   printf("Parent process ready to run\nParent:\t\tValue = %ld\n",
          M);                // print stuff
